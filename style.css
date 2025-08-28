@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Seção do topo com fundo escuro */
+#topo {
+    background-image: url(imagens/img-fundo.svg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 40px;
+    text-align: left;
+}
+
+#frase1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+#frase2 {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 500px;
+}
+
+/* Menu com estatísticas */
+#caixamenu {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+.estatistica {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.numero {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Container com texto e imagem */
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.texto-conteudo {
+    flex: 1;
+    min-width: 400px;
+}
+
+#descricao {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.2;
+}
+
+#paragrafo {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.imagem-conteudo {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+#imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé com formulário */
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#servicos {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+#botao {
+    background-color: #CC7A37;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao:hover {
+    background-color: #B8691F;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #frase1 {
+        font-size: 36px;
+    }
+    
+    #caixamenu {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #descricao {
+        font-size: 28px;
+    }
+}
